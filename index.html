@@ -1,0 +1,253 @@
+<!-- https://www.sarkariresult.com/2025/awes-tgt-pgt-prt-june25/ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Atharva Sastikar Portfolio</title>
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+      transition: background-color 0.3s, color 0.3s;
+    }
+    .light-theme {
+      background-color: #f4f4f4;
+      color: #121212;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    h2 {
+      margin-top: 40px;
+      color: #00e0ff;
+    }
+    .light-theme h2 {
+      color: #0077cc;
+    }
+    p {
+      line-height: 1.6;
+      font-size: 16px;
+    }
+    ul.skills-list {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 15px;
+    }
+    ul.skills-list li {
+      background-color: #00e0ff;
+      color: black;
+      padding: 10px 15px;
+      border-radius: 20px;
+      font-weight: bold;
+      font-size: 14px;
+    }
+    .project {
+      margin-top: 40px;
+      border: 1px solid #00e0ff;
+      border-radius: 10px;
+      padding: 20px;
+      background-color: #1e1e1e;
+      transition: background-color 0.3s;
+    }
+    .light-theme .project {
+      background-color: #ffffff;
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #00bcd4;
+    }
+    .light-theme .project h3 {
+      color: #0077cc;
+    }
+    .project-description {
+      margin-top: 10px;
+      font-size: 15px;
+    }
+    .contact {
+      margin-top: 50px;
+      text-align: center;
+    }
+    .contact a {
+      color: #00e0ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .light-theme .contact a {
+      color: #0077cc;
+    }
+
+    /* Theme Toggle Button */
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      background-color: #00e0ff;
+      border: none;
+      color: black;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 10px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+  </style>
+</head>
+<body>
+<!--   <button class="theme-toggle" onclick="toggleTheme()">Switch to Light Theme</button> -->
+
+  <div class="container">
+    <h1>Atharva Sastikar</h1>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am Atharva Sastikar, a dedicated and dynamic Data Engineer with a strong academic foundation in engineering and data analytics. I currently work at PharmaACE, where I specialize in developing scalable ETL pipelines, handling clinical and financial data workflows, and applying NLP techniques to automate and improve real-world business problems. I hold a PG Diploma in Big Data Analytics from CDAC and a Bachelor's in Engineering from DY Patil Institute of Technology, Pune.
+      </p>
+      <p>
+        My technical skillset includes Python, SQL, Redshift, AWS (S3, Lambda), JavaScript, HTML/CSS, and libraries like Pandas, NumPy, and Transformers. I’ve gained hands-on experience with tools like Streamlit, Flask, and PostgreSQL, and have worked extensively with financial APIs like yFinance and Financial Modeling Prep.
+      </p>
+      <p>
+        Beyond tech, I’m a quick learner with leadership qualities, a positive attitude, and a track record of team collaboration. My extracurricular achievements include winning gold and silver medals in Table Tennis and Tug of War at inter-college events, and I have also represented my school at the state level in Judo and Table Tennis.
+      </p>
+      <p>
+        Fluent in English, Hindi, Marathi, and Telugu, I enjoy poetry, music, and cooking — especially traditional Maharashtrian food. I believe in continuous growth and aim to contribute value to every organization I join through dedication, adaptability, and innovation.
+      </p>
+    </section>
+
+<section id="education">
+  <h2>Education</h2>
+  <ul>
+    <li><strong>PG Diploma in Big Data Analytics</strong> – CDAC (83%)</li>
+    <li><strong>Bachelor of Engineering (Information Technology)</strong> : DY Patil Institute of Technology, Pune  (9.00 CGPA)</li>
+    <li><strong>HSC (Class 12)</strong> – 95.70%</li>
+    <li><strong>SSC (Class 10)</strong> – 97.80%</li>
+  </ul>
+</section>
+
+
+<section id="achievements">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Bronze medalist in <strong>Table Tennis</strong> and <strong>Judo</strong> at the State Level School Championships.</li>
+    <li>Represented school at <strong>state level</strong> in Table Tennis and Judo.</li>
+    <li>Gold and silver medals in Table Tennis and Tug of War at inter-college events.</li>
+  </ul>
+</section>
+
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>AWS</li>
+        <li>Redshift</li>
+        <li>ETL</li>
+        <li>Pandas</li>
+        <li>SQL</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>NLP</li>
+        <li>yFinance</li>
+        <li>Streamlit</li>
+      </ul>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="project">
+        <h3>YouTube Transcript Summarizer</h3>
+        <p class="project-description">
+          Developed a Python-based web app that allows users to input a YouTube video link and get an instant transcript summary. The system extracts video transcripts using the <code>youtube-transcript-api</code> and applies NLP techniques like sentence tokenization, keyphrase extraction, and BERT-based summarization using Hugging Face Transformers. This tool helps users quickly understand long lectures, interviews, or tech talks. Built a simple UI using Streamlit and deployed it on the cloud.
+        </p>
+        <ul>
+          <li>Used <code>youtube-transcript-api</code> to fetch transcripts from YouTube videos reliably.</li>
+          <li>Processed transcripts with NLP techniques like sentence tokenization and keyphrase extraction.</li>
+          <li>Implemented BERT-based summarization model via Hugging Face Transformers for concise summaries.</li>
+          <li>Designed a simple user interface using Streamlit for easy input and display of summaries.</li>
+          <li>Deployed the app on a cloud platform ensuring scalability and accessibility.</li>
+          <li>Tested the system with various video types including lectures, interviews, and tech talks.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Python, NLP, HuggingFace Transformers, youtube-transcript-api, Streamlit</p>
+      </div>
+
+      <div class="project">
+        <h3>ETL Pipeline using Airflow for House Data Analysis</h3>
+        <p class="project-description">
+          Created a scalable ETL pipeline for housing price data extraction, transformation, and loading. Used BeautifulSoup and requests to scrape housing data from multiple real-estate websites, cleaned the data using Pandas, and stored it in an AWS Redshift warehouse. Implemented daily cron jobs for automation and added a validation module to handle inconsistent or duplicate entries. Added monitoring alerts using AWS SNS and integrated Tableau for dashboarding.
+        </p>
+        <ul>
+          <li>Scraped housing price data from multiple real-estate websites using BeautifulSoup and requests.</li>
+          <li>Cleaned and transformed raw data using Pandas to handle inconsistencies and missing values.</li>
+          <li>Designed and implemented ETL pipelines to load cleaned data into AWS Redshift for storage.</li>
+          <li>Set up daily automated data extraction jobs using cron on an EC2 instance.</li>
+          <li>Developed data validation modules to identify and handle duplicate or inconsistent records.</li>
+          <li>Configured AWS SNS alerts for monitoring pipeline failures and integrated Tableau dashboards for visualization.</li>
+        </ul>
+        <p><strong>Technologies:</strong> Python, Pandas, AWS Redshift, SQL, Web Scraping, Tableau, AWS S3</p>
+        <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/AtharvaSastikar/ETL_Pipeline_Using_Airflow" target="_blank" rel="noopener">
+          github.com/AtharvaSastikar/ETL_Pipeline_Using_Airflow
+        </a>
+      </p>
+      </div>
+
+       <div class="project">
+      <h3>🧠 Educational Assistant using Retrieval-Augmented Generation (RAG)</h3>
+      <p class="project-description">
+        Developed an intelligent assistant that answers educational queries using document embeddings, vector search, and LLMs...
+      </p>
+      <ul>
+        <li>Set up in-memory vector store using transformer embeddings.</li>
+        <li>Implemented semantic search to find contextually relevant educational content.</li>
+        <li>Integrated LangChain with ChatGroq/Cohere for dynamic prompt generation and LLM invocation.</li>
+        <li>Maintained session history to enable coherent multi-turn conversations.</li>
+        <li>Packaged as a single, runnable Python file with stepwise modular functions.</li>
+      </ul>
+      <p><strong>Technologies:</strong> Python, LangChain, Embeddings, ChatGroq, Cohere, Vector Store</p>
+      <p>
+        <strong>GitHub:</strong>
+        <a href="https://github.com/AtharvaSastikar/langchainCDAC9nov" target="_blank" rel="noopener">
+          github.com/AtharvaSastikar/langchainCDAC9nov
+        </a>
+      </p>
+    </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:sastikaratharva55@gmail.com">sastikaratharva55@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/atharva-sastikar" target="_blank" rel="noopener">atharva-sastikar</a></p>
+    </section>
+
+    
+  </div>
+<!-- Theme Toggle Button with Emoji -->
+<button class="theme-toggle" onclick="toggleTheme()">🌙</button>
+
+<script>
+  function toggleTheme() {
+    document.body.classList.toggle('light-theme');
+    const btn = document.querySelector('.theme-toggle');
+    const isLight = document.body.classList.contains('light-theme');
+    btn.textContent = isLight ? '🌞' : '🌙';
+  }
+</script>
+
+</body>
+</html>
